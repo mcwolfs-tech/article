@@ -1,0 +1,128 @@
+/**{    
+	margin:0;
+	padding:0;
+	}
+*/	
+
+body 
+{
+	font-family:'Eras ITC',sans-serif;
+    color: #8b8b8b;
+    line-height: 1.2em;
+    padding:0;
+    margin:0; /*pour eviter les espaces blanc*/
+    background: #fff;
+	
+}
+p{
+	
+	line-height:1.5em;
+	
+}
+
+h1 
+{
+font-size: 1.4em;
+    color: #e63636;
+    font-weight: normal;
+	margin-left:4em;
+
+
+}
+
+h2 
+{
+    font-size: 1.2em;
+    color: #3c3c3c;
+    font-weight: normal;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+    margin-left:4em;
+}
+
+
+h3 
+{
+	font-size: 0.8em;
+	color: #e63636;
+	text-align:center;
+}
+
+h4 
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align:center;
+}
+
+a 
+{
+	color: #F2F2F2;
+	font-weight: bold;
+	text-decoration:none;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size:1.3em;
+}
+
+/* Gestion du menu */
+
+nav{
+	width:100%;
+	height: 80px;
+	line-height:80px; /* si on a un height et un line height identique permet de centrer verticalement un contenu seulement si on à une seule ligne*/
+	background-color:black;
+	color:white;
+	padding-left: 15em;
+	margin:0; /*pour coller la barre noir en haut il faut aussi mettre une margin 0 pour que ça colle en haut de la page*/
+}
+
+nav li{
+	display:inline-block;
+}
+
+
+
+/* Gestion du contenu */
+
+div#contenu{
+	margin-top:2em; /*si on veut que ça s'adapte à la taille de l'écran de l'utilisateur on travail en % et si on veut que ce soit par rapport à la taille de la police on travail en em*/
+	/* margin-left:15em;
+	margin-right:15em; */
+	width: 60%;
+	/* max-width:1200px;
+	min-width:600px; */
+	margin:auto;
+	background-color:#F2F2F2;
+	padding:1em;
+	text-align: justify;
+}
+
+.important{
+	text-transform:small-caps;
+	color:e63636;
+	font-weight:bolder;
+}
+
+
+
+
+
+a:hover, a:focus /* c'est pour le surlignement quand on clique ou quand on navigue au clavier*/ /*c'est une pseudo classe il faut donc cibler un sélecteur ici le a */
+{ 
+	text-decoration:underline;
+	color: white; 
+}
+
+/*Gestion de la page active */ /*sur chaque page on à été ajouter la classe "page courante" ce qui permet de mettre le titre rouge "a"*/
+a.pagecourante{
+	color:#e63636;
+}
+
+
+
+
+
+
+
+
